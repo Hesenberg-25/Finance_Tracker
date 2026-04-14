@@ -133,9 +133,9 @@ Sets monthly spending limits and compares them against real expense data pulled 
 ## How the Integration Works
 
 ```
-ExpenseTracker.py  ──→  Expenses.csv
+ExpenseTracker.py  ==>  Expenses.csv
                               ↑
-BudgetTracker.py   ──→  Budget.csv
+BudgetTracker.py   ==>  Budget.csv
         └── imports get_monthly_expense() from ExpenseTracker.py
 ```
 
