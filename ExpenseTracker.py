@@ -1,6 +1,3 @@
-# In professional finance apps, users don't just want to see a list of what they spent.
-# They want the app to tell them how to be better with money.
-
 from datetime import date
 import csv
 category = ["Food", "Transport", "Household", "Education", "Health", "Utilities", "Other"]
@@ -120,7 +117,7 @@ def see_summary():
     else:
         print("Invalid Input")
 
-if __name__ == "__main__":
+def menu_expense_tracker():
     print("Welcome to Expense Tracker")
     while (True):
         print("\n")
@@ -141,3 +138,6 @@ if __name__ == "__main__":
             break
         else:
             print("Invalid Input")
+
+if __name__ == "__main__":
+    menu_expense_tracker()
