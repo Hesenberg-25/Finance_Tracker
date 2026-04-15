@@ -11,6 +11,7 @@ A beginner fintech project suite built in Python, integrating three financial to
 ```
 Personal-Finance-Suite/
 │
+├── Integration.py          # Main file from where others are operated
 ├── ExpenseTracker.py       # Track daily expenses by category
 ├── InterestCalculator.py   # SI, CI, EMI, SIP, Tax calculations
 ├── BudgetTracker.py        # Set budgets and compare vs actual spending
@@ -137,6 +138,12 @@ ExpenseTracker.py  ==>  Expenses.csv
                               ↑
 BudgetTracker.py   ==>  Budget.csv
         └── imports get_monthly_expense() from ExpenseTracker.py
+
+```
+```
+ExpenseTracker.py ──────|
+BudgetTracker.py ───────|──────> Integaration.py
+InterestCalculator.py ──|
 ```
 
 `BudgetTracker` directly imports `ExpenseTracker` to pull live monthly totals — no manual data entry duplication.
