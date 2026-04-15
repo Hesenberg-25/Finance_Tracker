@@ -148,10 +148,9 @@ def sip():
     except:
         print(" ⚠️ Invalid Input")
 
-
-if __name__ == "__main__":
-    print("Welcome to Intrest Calculator")
-    while True:
+def menu_intrest_calculator():
+     print("Welcome to Intrest Calculator")
+     while True:
         print("\n")
         print("1. Simple Intrest")
         print("2. Compound Intrest")
@@ -176,3 +175,6 @@ if __name__ == "__main__":
             break
         else:
             print(" ⚠️ Invalid Input")
+
+if __name__ == "__main__":
+    menu_intrest_calculator()
