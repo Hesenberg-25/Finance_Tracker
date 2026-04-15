@@ -61,7 +61,7 @@ def check_budget():
     else:
         print("You are exactly on budget! Be careful.")
 
-if __name__ == "__main__":
+def menu_budget_tracker():
     print("Welocome To Budget Tracker")
     while (True):
         print("\n")
@@ -79,3 +79,6 @@ if __name__ == "__main__":
             break
         else:
             print("⚠️ Invalid Input")
+
+if __name__ == "__main__":
+    menu_budget_tracker()
